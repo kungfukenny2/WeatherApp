@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        script(src="https://kit.fontawesome.com/3496dc14d4.js" crossorigin="anonymous")
+        style 
+           include ../stylesheets/style.css
+        title Weather App Project
+    body 
+        h1 Howdy and Good Day! What's the Weather Today? 🌤☂️🌦❄️
+        h1  Current Temperature in #{data.location} is #{data.temp} ℉
+    
+
+        div(class= 'container')
+            input(id= 'theCity' type="text", name="location" placeholder="Search City or Zip Code")
+            button(id='btn' type='button', onclick='someFunc()') Submit
+
+    
+
+
+
+        script(src="/static/index.js")
+
+
